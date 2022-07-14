@@ -4,6 +4,7 @@ import classes from './style.module.css'
 export default function Model() {
 
     const model = {
+        contain: "images/background/background4.jpg",
         body: "images/allbody/bodynew.png",
         bikinitop: "images/allbody/bikini_branew.png",
         bikinibottom: 'images/allbody/bikini_pantsnew.png',
@@ -19,7 +20,9 @@ export default function Model() {
 
 
     return (
-        <div className={classes.contain} >
+        <div className={classes.contain} style={{
+            background:`url(${model.contain})`
+        }} >
             <div className={classes.body} style={{ background:`url(${model.body})` }} />
             <div className={classes.model} style={{ background:`url(${model.model})` }}/>
             <div className={classes.bikinitop} style={{ background:`url(${model.bikinitop})` }}/>
