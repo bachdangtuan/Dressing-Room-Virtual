@@ -22,12 +22,7 @@ export default function Products() {
             {chooseCategory === 'top' ?
 
                 <div className='container text-center'>
-                    <h1>Logic Bài Toán</h1>
-                    <p>Tổ chức redux xác định thành phần state thay đổi,sử dụng hook Khởi tạo action getAPI, và dispatch action gửi data lên redux</p>
-                    <p>Link: https://621e368a849220b1fc93323b.mockapi.io/Dressingroom</p>
-                    <p>Xử lý render từng sản phẩm tương ứng theo mục</p>
-                    <p>Khi click vào button "Quần, Áo" sẽ gửi lên store 1 type , nếu type trùng với type ở arrSP lấy từ API về thì render</p>
-                    <p>....update.....</p>
+                    <h1>Thử Đồ Online</h1>
                 </div>
                 : renderProduct()}
 
